@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.cm/hemengke1997/tailwind-antd-preset.git"
+    "url": "git+https://github.com/hemengke1997/tailwind-antd-preset.git"
   },
   "author": "hemengke <https://github.com/hemengke1997>",
   "files": [
@@ -56,18 +56,15 @@
     "@minko-fe/eslint-config": "^2.0.7",
     "@minko-fe/tsconfig": "^2.0.7",
     "@types/node": "^20.11.3",
-    "@types/tinycolor2": "^1.4.6",
     "bumpp": "^9.2.1",
     "conventional-changelog-cli": "^4.1.0",
     "cross-env": "^7.0.3",
     "eslint": "8.53.0",
-    "execa": "^8.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.33",
     "simple-git-hooks": "^2.9.0",
     "tailwindcss": "^3.4.1",
     "taze": "^0.12.3",
-    "tinycolor2": "^1.6.0",
     "tsup": "^7.2.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",

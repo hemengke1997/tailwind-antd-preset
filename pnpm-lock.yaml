@@ -30,9 +30,6 @@ importers:
       '@types/node':
         specifier: ^20.11.3
         version: 20.11.3
-      '@types/tinycolor2':
-        specifier: ^1.4.6
-        version: 1.4.6
       bumpp:
         specifier: ^9.2.1
         version: 9.2.1
@@ -45,9 +42,6 @@ importers:
       eslint:
         specifier: 8.53.0
         version: 8.53.0
-      execa:
-        specifier: ^8.0.1
-        version: 8.0.1
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
@@ -63,9 +57,6 @@ importers:
       taze:
         specifier: ^0.12.3
         version: 0.12.3
-      tinycolor2:
-        specifier: ^1.6.0
-        version: 1.6.0
       tsup:
         specifier: ^7.2.0
         version: 7.2.0(postcss@8.4.33)(typescript@5.3.3)
@@ -1602,10 +1593,6 @@ packages:
 
   /@types/semver@7.5.2:
     resolution: {integrity: sha512-7aqorHYgdNO4DM36stTiGO3DvKoex9TQRwsJU6vMaFGyqpBA1MNZkz+PG3gaNUPpTAOYhT1WR7M1JyA3fbS9Cw==}
-    dev: true
-
-  /@types/tinycolor2@1.4.6:
-    resolution: {integrity: sha512-iEN8J0BoMnsWBqjVbWH/c0G0Hh7O21lpR2/+PrvAVgWdzL7eexIFm4JN/Wn10PTcmNdtS6U67r499mlWMXOxNw==}
     dev: true
 
   /@types/unist@2.0.6:
@@ -7080,10 +7067,6 @@ packages:
 
   /tinybench@2.5.1:
     resolution: {integrity: sha512-65NKvSuAVDP/n4CqH+a9w2kTlLReS9vhsAP06MWx+/89nMinJyB2icyl58RIcqCmIggpojIGeuJGhjU1aGMBSg==}
-    dev: true
-
-  /tinycolor2@1.6.0:
-    resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
     dev: true
 
   /tinypool@0.7.0:
