@@ -11,5 +11,4 @@ export const tsup = defineConfig((option) => ({
   treeshake: true,
   minify: false,
   sourcemap: !!option.watch,
-  tsconfig: option.watch ? 'tsconfig.dev.json' : 'tsconfig.json',
 }))

@@ -1,4 +1,4 @@
-# ts-template
+# tailwind-antd-preset
 
 > a template for typescript project or plugin
 
