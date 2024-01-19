@@ -1,5 +1,6 @@
 /* copy from antd official website */
 :root {
+  /* colors */
   --ant-blue: #1677ff;
   --ant-purple: #722ed1;
   --ant-cyan: #13c2c2;
@@ -235,6 +236,7 @@
   --ant-color-link-active: #1554ad;
   --ant-color-bg-mask: rgba(0, 0, 0, 0.45);
   --ant-color-white: #fff;
+  /* font-size */
   --ant-font-size-sm: 12px;
   --ant-font-size-lg: 16px;
   --ant-font-size-xl: 20px;
@@ -243,28 +245,35 @@
   --ant-font-size-heading-3: 24px;
   --ant-font-size-heading-4: 20px;
   --ant-font-size-heading-5: 16px;
+  /* leading */
   --ant-line-height: 1.5714285714285714;
   --ant-line-height-lg: 1.5;
   --ant-line-height-sm: 1.6666666666666667;
+  /* font-height */
   --ant-font-height: 22px;
   --ant-font-height-lg: 24px;
   --ant-font-height-sm: 20px;
+  /* leading heading */
   --ant-line-height-heading-1: 1.2105263157894737;
   --ant-line-height-heading-2: 1.2666666666666666;
   --ant-line-height-heading-3: 1.3333333333333333;
   --ant-line-height-heading-4: 1.4;
   --ant-line-height-heading-5: 1.5;
+  /* control */
   --ant-control-height-sm: 24px;
   --ant-control-height-xs: 16px;
   --ant-control-height-lg: 40px;
+  /* motion duration */
   --ant-motion-duration-fast: 0.1s;
   --ant-motion-duration-mid: 0.2s;
   --ant-motion-duration-slow: 0.3s;
   --ant-line-width-bold: 2px;
+  /* rounded */
   --ant-border-radius-xs: 2px;
   --ant-border-radius-sm: 4px;
   --ant-border-radius-lg: 8px;
   --ant-border-radius-outer: 4px;
+  /* colors */
   --ant-color-fill-content: rgba(255, 255, 255, 0.12);
   --ant-color-fill-content-hover: rgba(255, 255, 255, 0.18);
   --ant-color-fill-alter: rgba(255, 255, 255, 0.04);

@@ -34,11 +34,6 @@
     "gen": "tsx src/antdToTw",
     "dev": "simple-git-hooks && tsup --watch",
     "build": "tsup",
-    "build:pages": "npm run build && cd playground/spa && npm run build",
-    "test": "run-s test:unit test:serve test:build",
-    "test:unit": "vitest run",
-    "test:serve": "vitest run -c vitest.config.e2e.ts",
-    "test:build": "cross-env VITE_TEST_BUILD=1 vitest run -c vitest.config.e2e.ts",
     "commitlint": "commitlint --edit",
     "lint": "eslint .",
     "up": "taze -I -w -r",
@@ -70,9 +65,6 @@
     "typescript": "^5.3.3",
     "vite": "^4.5.1",
     "vitest": "^0.34.6"
-  },
-  "engines": {
-    "node": ">=16.0.0"
   },
   "simple-git-hooks": {
     "commit-msg": "npm run commitlint",

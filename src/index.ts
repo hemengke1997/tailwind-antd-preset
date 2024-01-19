@@ -1,5 +1,5 @@
 import { type Config } from 'tailwindcss'
-import theme from './theme'
+import theme from './generate/theme'
 
 const TailwindAntdPreset = {
   theme: {
