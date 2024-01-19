@@ -1,13 +1,10 @@
 import { type Declaration } from 'postcss'
 import { type ThemeConfig } from 'tailwindcss/types/config'
 
-type CustomThemeKey = 'control' | 'fontHeight' | 'LinkDecoration'
-type MaybeArray<T> = T | T[]
-
 export abstract class AbstractAntToTw {
-  private cache: Map<string, string> = new Map<string, string>()
+  private cache: Record<string, string> = {}
 
-  constructor(private twThemeKey: MaybeArray<keyof ThemeConfig | CustomThemeKey>) {}
+  constructor(public twThemeKey: keyof ThemeConfig) {}
 
   public setTwProps(decl: Declaration) {
     if (this.isVariableDeclaration(decl) && this.isMatch(this.extractProp(decl), decl)) {
@@ -16,7 +13,7 @@ export abstract class AbstractAntToTw {
       prop = this.beforeSet(prop)
 
       const value = `var(${decl.prop})`
-      this.cache.set(prop, value)
+      this.cache[prop] = value
       return true
     } else {
       return false
@@ -24,14 +21,9 @@ export abstract class AbstractAntToTw {
   }
 
   public getTwProps() {
-    const twThemeKey = this.twThemeKey
-    const twProps = Array.isArray(twThemeKey) ? twThemeKey : [twThemeKey]
-
-    return twProps.map((prop) => {
-      return {
-        [prop]: this.cache,
-      }
-    })
+    return {
+      [this.twThemeKey]: this.cache,
+    }
   }
 
   public beforeSet(prop: string) {

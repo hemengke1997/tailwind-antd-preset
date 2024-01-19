@@ -5,6 +5,7 @@ const TailwindAntdPreset = {
   theme: {
     extend: theme,
   },
+  plugins: [],
 } as unknown as Config
 
 export default TailwindAntdPreset

@@ -27,22 +27,26 @@ async function parseCss(css: string) {
       })
     })
   })
-  return antToTw.flatMap((converter) => {
-    return converter.getTwProps()
+
+  const theme: {
+    [twProp: string]: {
+      [antCssProp in string]: string
+    }
+  } = {}
+
+  antToTw.forEach((converter) => {
+    const key = converter.twThemeKey
+    theme[key] = {
+      ...theme[key],
+      ...converter.getTwProps()[key],
+    }
   })
+  return theme
 }
 
 type UnPromise<T> = T extends Promise<infer U> ? U : T
 
-async function writeTwToTs(param: UnPromise<ReturnType<typeof parseCss>>) {
-  const theme: Record<string, Record<string, string>> = {}
-
-  param.forEach((item) => {
-    Object.keys(item).forEach((key) => {
-      theme[key] = Object.fromEntries(item[key])
-    })
-  })
-
+async function writeTwToTs(theme: UnPromise<ReturnType<typeof parseCss>>) {
   const content = `export default ${JSON.stringify(theme)}`
 
   const out = path.resolve(__dirname, './theme.ts')

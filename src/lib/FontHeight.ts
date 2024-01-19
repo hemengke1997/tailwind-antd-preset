@@ -2,7 +2,7 @@ import { AbstractAntToTw } from './AbstractAntToTw'
 
 export class FontHeight extends AbstractAntToTw {
   constructor() {
-    super('fontHeight')
+    super('height')
   }
 
   isMatch(prop: string) {
