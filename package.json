@@ -1,6 +1,6 @@
 {
   "name": "tailwind-antd-preset",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Use antd css variables in tailwindcss",
   "type": "module",
   "keywords": [
