@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/hemengke1997/tailwind-antd-preset/compare/v0.0.3...v0.0.4) (2024-01-19)
+
+
+### Bug Fixes
+
+* splite control props to where it belongs ([ff0c22f](https://github.com/hemengke1997/tailwind-antd-preset/commit/ff0c22f7e8c1b974e372ef70fa67166e9c95405d))
+
+
+
 ## [0.0.3](https://github.com/hemengke1997/tailwind-antd-preset/compare/v0.0.2...v0.0.3) (2024-01-19)
 
 
